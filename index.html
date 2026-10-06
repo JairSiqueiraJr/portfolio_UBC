@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- Página inicial do Guia de Locais de Mogi das Cruzes -->
+<html lang="pt-BR"> <!-- lang informa o idioma (ajuda leitores de tela e tradutores) -->
+<head>
+  <meta charset="UTF-8"> <!-- permite acentos e "ç" -->
+  <!-- ESSENCIAL PARA RESPONSIVIDADE: faz o celular usar a largura real da tela -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guia de Locais — Mogi das Cruzes</title>
+  <link rel="stylesheet" href="css/style.css"> <!-- liga o arquivo de estilos -->
+</head>
+<body>
+
+  <!-- CABEÇALHO: título do site + menu (organizado com Flexbox no CSS) -->
+  <header class="cabecalho">
+    <div class="titulo">
+      <h1>Guia de Locais</h1>
+      <p>Mogi das Cruzes</p>
+    </div>
+    <nav class="menu" aria-label="Menu principal">
+      <a href="index.html" class="ativo">Início</a>
+      <a href="index.html#parques" >Locais</a>
+      <a href="index.html#eventos">Eventos</a>
+      <a href="index.html#rodape">Contato</a>
+    </nav>
+  </header>
+
+  <!-- .pagina vira uma GRID de 2 colunas no computador (lateral + conteúdo) -->
+  <div class="pagina">
+
+    <!-- BARRA LATERAL: só aparece em telas grandes -->
+    <aside class="barra-lateral">
+      <h2>Explorar</h2>
+      <ul>
+        <li><a href="#parques">Parques</a></li>
+        <li><a href="#museus">Museus</a></li>
+        <li><a href="#teatros">Teatros</a></li>
+        <li><a href="#mais-locais">Mais locais</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <!-- Faixa de boas-vindas -->
+      <section class="faixa-boas-vindas">
+        <h2>Descubra sua cidade</h2>
+        <p>Locais, eventos e programação cultural em um só lugar.</p>
+      </section>
+
+      <div class="conteudo">
+
+    <h2 class="categoria" id="parques">Parques</h2>
+    <div class="lista-cartoes">
+      <!-- Cartão: Parque Centenário -->
+      <article class="cartao">
+        <img src="imagens/parque cetenario.jpg" alt="Ilustração: Parque Centenário">
+        <div class="texto"><h3>Parque Centenário</h3><p>Parque da Imigração Japonesa, com quatro lagos, pista de caminhada e entrada gratuita.</p><a class="ver-mais" href="local-parque-centenario.html">Ver a página do local →</a></div>
+      </article>
+      <!-- Cartão: Parque das Neblinas -->
+      <article class="cartao">
+        <img src="imagens/canoagem-acervo-ecofuturo.jpg" alt="Ilustração: Parque das Neblinas">
+        <div class="texto"><h3>Parque das Neblinas</h3><p>Reserva de Mata Atlântica na Serra do Mar, com trilhas e passarela suspensa. Visitas agendadas.</p></div>
+      </article>
+      <!-- Cartão: Parque da Cidade -->
+      <article class="cartao">
+        <img src="imagens/parque_da_cidade.jpg" alt="Ilustração: Parque da Cidade">
+        <div class="texto"><h3>Parque da Cidade</h3><p>Projeto de Ruy Ohtake com pista de caminhada, quadras esportivas, orquidário e teatro de arena.</p></div>
+      </article>
+    </div>
+
+    <h2 class="categoria" id="museus">Museus</h2>
+    <div class="lista-cartoes">
+      <!-- Cartão: Museu Taro Konno -->
+      <article class="cartao">
+        <img src="imagens/parque_toro_konnon.jpeg" alt="Ilustração: Museu Taro Konno">
+        <div class="texto"><h3>Museu Taro Konno</h3><p>Conta a história da imigração japonesa; fica dentro do Parque Centenário.</p></div>
+      </article>
+      <!-- Cartão: Museu dos Expedicionários -->
+      <article class="cartao">
+        <img src="imagens/museu-do-expedicionario.webp" alt="Ilustração: Museu dos Expedicionários">
+        <div class="texto"><h3>Museu dos Expedicionários</h3><p>Memória dos pracinhas da região que lutaram na Segunda Guerra Mundial.</p></div>
+      </article>
+    </div>
+
+    <h2 class="categoria" id="teatros">Teatros</h2>
+    <div class="lista-cartoes">
+      <!-- Cartão: Teatro Vasques -->
+      <article class="cartao">
+        <img src="imagens/teatro_vasque.jpg" alt="Ilustração: Teatro Vasques">
+        <div class="texto"><h3>Teatro Vasques</h3><p>Espetáculos de teatro, música e dança no centro da cidade.</p></div>
+      </article>
+    </div>
+
+    <h2 class="categoria" id="mais-locais">Mais locais</h2>
+    <div class="lista-cartoes">
+      <!-- Cartão: Pico do Urubu -->
+      <article class="cartao">
+        <img src="imagens/pico_urubu.webp" alt="Ilustração: Pico do Urubu">
+        <div class="texto"><h3>Pico do Urubu</h3><p>Mirante na Serra do Itapeti, a cerca de 1.160 m de altitude, com trilhas e voo livre.</p></div>
+      </article>
+      <!-- Cartão: Sesc Mogi das Cruzes -->
+      <article class="cartao">
+        <img src="imagens/sesc_mogi.png" alt="Ilustração: Sesc Mogi das Cruzes">
+        <div class="texto"><h3>Sesc Mogi das Cruzes</h3><p>Atividades esportivas, culturais, de educação e de saúde.</p></div>
+      </article>
+    </div>
+
+    <!-- EVENTOS (exemplos ilustrativos — datas fictícias para o exercício) -->
+    <h2 class="categoria" id="eventos">Próximos eventos</h2>
+    <div class="lista-eventos">
+      <div class="evento"><strong>03 out</strong> Festival de música <span>— Parque Centenário</span></div>
+      <div class="evento"><strong>10 out</strong> Mostra de cinema <span>— Teatro Vasques</span></div>
+      <div class="evento"><strong>17 out</strong> Oficina de história <span>— Museu Taro Konno</span></div>
+    </div>
+
+      </div><!-- fim .conteudo -->
+    </main>
+  </div><!-- fim .pagina -->
+
+  <!-- RODAPÉ -->
+  <footer class="rodape" id="rodape">
+    <p>Guia de Locais e Eventos — Mogi das Cruzes</p>
+    <a href="mailto:contato@guiadelocais.exemplo.com">contato@guiadelocais.exemplo.com</a>
+    <a href="https://www.mogidascruzes.sp.gov.br" target="_blank" rel="noopener">Site da Prefeitura</a>
+    <a href="mailto:contato@guiadelocais.exemplo.com?subject=Sugestão de local">Sugerir um local</a>
+  </footer>
+</body>
+</html>
