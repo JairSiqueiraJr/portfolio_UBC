@@ -1,0 +1,18 @@
+GUIA DE LOCAIS — MOGI DAS CRUZES (CP2 / Aula 08)
+
+COMO ABRIR: dê dois cliques em index.html.
+
+ARQUIVOS
+- index.html ................. página inicial (locais por categoria + eventos)
+- local-parque-centenario.html página interna de um local
+- css/style.css ............. todo o visual, comentado passo a passo
+- imagens/ .................. ilustrações SVG criadas para cada local
+
+TÉCNICAS PEDIDAS: Flexbox (cabeçalho, menu, cartões, eventos), Grid (página com
+barra lateral + conteúdo, a partir de 900px) e Media Queries mobile-first (600px e 900px).
+
+TESTE: abra no navegador, aperte F12 e ative o modo celular; ou apenas estreite a janela.
+
+FONTES DOS DADOS: endereço, horário (7h–17h), telefone, tamanho e história do Parque
+Centenário vieram de guias públicos (QuintoAndar, Buser, Accor) e do site da Prefeitura.
+Os EVENTOS e o e-mail de contato são fictícios (exemplo). Confirme os dados antes de publicar.
