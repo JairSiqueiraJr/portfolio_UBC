@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- Página interna: detalhes de UM local (Parque Centenário) -->
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parque Centenário — Guia de Locais</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="titulo"><h1>Guia de Locais</h1><p>Mogi das Cruzes</p></div>
+    <nav class="menu" aria-label="Menu principal">
+      <a href="index.html" >Início</a>
+      <a href="index.html#parques" class="ativo">Locais</a>
+      <a href="index.html#eventos">Eventos</a>
+      <a href="index.html#rodape">Contato</a>
+    </nav>
+  </header>
+
+  <main class="pagina-local">
+    <!-- Sub-menu: atalhos que "pulam" para cada seção abaixo (usam o id de cada seção) -->
+    <nav class="submenu" aria-label="Nesta página">
+      <a href="index.html#parques">← Locais</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#informacoes">Informações</a>
+      <a href="#comodidades">Comodidades</a>
+      <a href="#eventos">Eventos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <h1>Parque Centenário</h1>
+
+    <!-- Imagem principal com legenda (figure + figcaption = imagem com texto associado) -->
+    <figure class="destaque">
+      <img src="imagens/parque cetenario.jpg" alt="Ilustração do Parque Centenário ao entardecer, com árvores e um lago">
+      <figcaption>Parque Centenário da Imigração Japonesa — ilustração do parque ao entardecer.</figcaption>
+    </figure>
+
+    <section class="secao" id="sobre">
+      <h2>Sobre o local</h2>
+      <p>O <strong>Parque Centenário da Imigração Japonesa</strong> foi inaugurado em junho de 2008, em homenagem aos 100 anos da imigração japonesa no Brasil. Tem cerca de 215 mil m², quatro lagos com pontes flutuantes e abriga o Museu Taro Konno.</p>
+      <blockquote>Um pedaço do Japão às margens do Rio Tietê.</blockquote>
+    </section>
+
+    <section class="secao" id="informacoes">
+      <h2>Informações</h2>
+      <!-- Envelope de rolagem: no celular a tabela desliza para o lado em vez de ser cortada -->
+      <div class="tabela-rolavel">
+        <table>
+          <caption>Funcionamento e dados do parque</caption>
+          <thead><tr><th>Item</th><th>Detalhe</th><th>Observações</th></tr></thead>
+          <tbody>
+            <tr><td>Funcionamento</td><td>Todos os dias</td><td>Das 7h às 17h</td></tr>
+            <tr><td>Entrada</td><td>Gratuita</td><td>Sem cobrança de ingresso</td></tr>
+            <tr><td>Endereço</td><td>Av. Francisco Rodrigues Filho, s/n</td><td>Bairro Cezar de Souza</td></tr>
+            <tr><td>Telefone</td><td>(11) 4739-2345</td><td>Confirme horários antes de ir</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="secao" id="comodidades">
+      <h2>Comodidades</h2>
+      <ol>
+        <li>Pista de caminhada e trilhas</li>
+        <li>Playground infantil e quadras esportivas</li>
+        <li>Quiosques e lanchonete</li>
+        <li>Museu Taro Konno e centro de informações turísticas</li>
+      </ol>
+    </section>
+
+    <section class="secao" id="eventos">
+      <h2>Próximos eventos</h2>
+      <h3>Festival de Música ao Ar Livre (exemplo)</h3>
+      <p>Apresentações gratuitas de bandas locais.</p>
+      <ul>
+        <li>Data: sábado, 3 de outubro</li>
+        <li>Horário: 15h às 21h</li>
+        <li>Entrada gratuita</li>
+      </ul>
+    </section>
+
+    <section class="secao" id="contato">
+      <h2>Contato e links</h2>
+      <div class="links-contato">
+        <a href="https://www.google.com/maps/search/?api=1&query=Parque+Centenário+da+Imigração+Japonesa+Mogi+das+Cruzes" target="_blank" rel="noopener">Ver no mapa →</a>
+        <a href="https://www.mogidascruzes.sp.gov.br" target="_blank" rel="noopener">Site da Prefeitura →</a>
+        <a href="mailto:contato@guiadelocais.exemplo.com?subject=Correção: Parque Centenário">Sugerir correção →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape" id="rodape"><p>Guia de Locais e Eventos — Mogi das Cruzes</p></footer>
+</body>
+</html>
